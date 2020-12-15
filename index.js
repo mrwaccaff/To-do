@@ -50,7 +50,7 @@ add.addEventListener('click', e => {
                     <span class="delete-list"><i class="fas fa-times" aria-hidden="true"></i></span>
                 </div>
 `;
-        tasks.innerHTML = newTask;
+        tasks.innerHTML += newTask;
         
         input.value == ""
     }
