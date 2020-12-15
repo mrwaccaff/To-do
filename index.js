@@ -2,7 +2,7 @@ const add = document.querySelector('.fa-plus')
 const input = document.querySelector('.input')
 const form = document.querySelector('.input-form')
 const tasks = document.querySelector('.tasks')
-let del = document.querySelector('.fa-times')
+let del = document.querySelectorAll('.fa-times')
 
 
 form.addEventListener('submit', e => {
@@ -55,8 +55,11 @@ add.addEventListener('click', e => {
         input.value == ""
     }
 })
-del.addEventListener('click', e => {
+
+del.forEach(item => {
+item.addEventListener('click', e => {
     var item = e.target;
     console.log(item)
     item.closest('div').remove();
 })
+});
