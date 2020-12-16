@@ -40,4 +40,8 @@ window.addEventListener('click', (e) => {
     if (target.classList.contains('fa-times')) {
         target.closest('div').remove();
     }
+    if (target.classList.contains('checkbox')) {
+        let countChecked = document.querySelectorAll('.checkbox:checked');
+        console.log(countChecked.length);
+    }
 })
