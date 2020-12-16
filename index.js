@@ -65,6 +65,9 @@ window.addEventListener('click', (e) => {
     }
     if (target.classList.contains('active')) {
         let countChecked = document.querySelectorAll('.checkbox:checked');
+         countChecked.forEach(item => {
+         item.style.display ='none';
+})
         
     }
 })
